@@ -1,3 +1,5 @@
+//🌱 Importa Codigo: Permite un mejor Orden el import export
+
 import { Product } from "./Product.js";
 import { UI } from "./UI.js";
 

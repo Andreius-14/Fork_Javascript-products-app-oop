@@ -1,0 +1,10 @@
+🌲Los Archivos a comentar son los de Javascript
+    App.js 
+    Product.js 
+    UI.js 
+
+🌿 
+
+
+🌱 Los Datos Insertados no emplean Database se Guardan en Cache POO
+

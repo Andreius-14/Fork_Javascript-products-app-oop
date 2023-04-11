@@ -14,3 +14,8 @@ export class Product {
     this.year = year;
   }
 }
+
+/*
+  🌱 Esta Class - Permite que se guarda el Objeto Creado en Cache
+  🌱 Esta Class - Permitira crear Instancias POO . En App.js
+*/

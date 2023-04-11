@@ -2,10 +2,8 @@
  * User Interface Class
  */
 export class UI {
-  /**
-   * Add a New Product 
-   * @param {Object} product A new product Object
-   */
+
+  // 🌱 Funcion - Inserta Fila de Datos
   addProduct(product) {
     const productList = document.getElementById("product-list");
     const element = document.createElement("div");
@@ -16,19 +14,18 @@ export class UI {
                     <strong>Price</strong>: ${product.price} - 
                     <strong>Year</strong>: ${product.year}
                     <a href="#" class="btn btn-danger" name="delete">Delete</a>
-                </div>
+                </div> 
             </div>
         `;
     productList.appendChild(element);
   }
 
-  /**
-   * Reset Form Values
-   */
+  // 🌱 Limpia el Formulario
   resetForm() {
     document.getElementById("product-form").reset();
   }
 
+  // 💀 Funcion Eliminar
   deleteProduct(element) {
     if (element.name === "delete") {
       element.parentElement.parentElement.remove();
@@ -36,16 +33,19 @@ export class UI {
     }
   }
 
+  // 🌱 Notificacion Temporal
   showMessage(message, cssClass) {
+
+    // 🦴 Mensaje a Insertar
     const div = document.createElement("div");
     div.className = `alert alert-${cssClass} mt-2`;
     div.appendChild(document.createTextNode(message));
 
-    // Show in The DOM
+    // 🦴 Insercion - Enlace al Html
     const container = document.querySelector(".container");
     const app = document.querySelector("#App");
 
-    // Insert Message in the UI
+    // 🦴 Insersion - Precisa
     container.insertBefore(div, app);
 
     // Remove the Message after 3 seconds
