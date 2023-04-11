@@ -4,6 +4,7 @@ import { Product } from "./Product.js";
 import { UI } from "./UI.js";
 
 // DOM Events
+// 🌱 Cuando se envia el formulario
 document
   .getElementById("product-form")
   .addEventListener("submit", function (e) {

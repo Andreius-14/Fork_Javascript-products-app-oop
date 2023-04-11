@@ -27,6 +27,7 @@ export class UI {
 
   // 💀 Funcion Eliminar
   deleteProduct(element) {
+    // verifica que lo que se presiono fue el boton
     if (element.name === "delete") {
       element.parentElement.parentElement.remove();
       this.showMessage("Product Deleted Succsssfully", "success");
